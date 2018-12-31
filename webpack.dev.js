@@ -44,6 +44,14 @@ module.exports = {
 								loader: 'file-loader'
 					 	},
 			{
+                test: /\.png$/,
+								loader: 'file-loader'
+					 	},
+						{
+			          test: /\.mp4/,
+			          loader: 'file-loader'
+			        },
+			{
 				test: /\.jsx?$/, // Here we're going to use JS for react components but including JSX in case this extension is preferable
 				include: [
 					path.resolve(__dirname, "src"),
